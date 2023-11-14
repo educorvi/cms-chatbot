@@ -4,11 +4,11 @@
 
 # open\_ai Properties
 
-| Property                     | Type      | Required | Nullable       | Defined by                                                                                                                        |
-| :--------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| [api\_key](#api_key)         | `string`  | Required | cannot be null | [Configuration](conf-properties-openai-settings-properties-api_key.md "undefined#/properties/open_ai/properties/api_key")         |
-| [model](#model)              | `string`  | Required | cannot be null | [Configuration](conf-properties-openai-settings-properties-model.md "undefined#/properties/open_ai/properties/model")             |
-| [spend\_limit](#spend_limit) | `integer` | Optional | cannot be null | [Configuration](conf-properties-openai-settings-properties-spend_limit.md "undefined#/properties/open_ai/properties/spend_limit") |
+| Property                           | Type      | Required | Nullable       | Defined by                                                                                                                              |
+| :--------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [api\_key](#api_key)               | `string`  | Required | cannot be null | [Configuration](conf-properties-openai-settings-properties-api_key.md "undefined#/properties/open_ai/properties/api_key")               |
+| [model](#model)                    | `string`  | Required | cannot be null | [Configuration](conf-properties-openai-settings-properties-model.md "undefined#/properties/open_ai/properties/model")                   |
+| [spending\_limit](#spending_limit) | `integer` | Optional | cannot be null | [Configuration](conf-properties-openai-settings-properties-spending_limit.md "undefined#/properties/open_ai/properties/spending_limit") |
 
 ## api\_key
 
@@ -58,11 +58,11 @@ gpt-4-1106-preview
 
 ```
 
-## spend\_limit
+## spending\_limit
 
 Monthly spend limit in dollars
 
-`spend_limit`
+`spending_limit`
 
 *   is optional
 
@@ -70,13 +70,13 @@ Monthly spend limit in dollars
 
 *   cannot be null
 
-*   defined in: [Configuration](conf-properties-openai-settings-properties-spend_limit.md "undefined#/properties/open_ai/properties/spend_limit")
+*   defined in: [Configuration](conf-properties-openai-settings-properties-spending_limit.md "undefined#/properties/open_ai/properties/spending_limit")
 
-### spend\_limit Type
+### spending\_limit Type
 
 `integer`
 
-### spend\_limit Default Value
+### spending\_limit Default Value
 
 The default value is:
 

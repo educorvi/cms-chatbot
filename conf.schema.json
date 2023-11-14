@@ -3,12 +3,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "title": "Configuration",
+  "additionalProperties": false,
   "description": "Configuration for the inwi-gpt-chatbot",
   "required": [
     "open_ai",
-    "search"
+    "search",
+    "websocket"
   ],
   "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Schema of the configuration file",
+      "default": "https://educorvi.de/cms-chatbot/conf.schema.yaml"
+    },
     "open_ai": {
       "type": "object",
       "title": "OpenAI Settings",
@@ -30,7 +37,7 @@
             "gpt-4-1106-preview"
           ]
         },
-        "spend_limit": {
+        "spending_limit": {
           "type": "integer",
           "description": "Monthly spend limit in dollars",
           "default": 50
@@ -181,14 +188,19 @@
       "type": "object",
       "title": "DeepL Settings",
       "description": "Settings for the DeepL API",
-      "required": [
-        "api_key"
-      ],
       "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Enable DeepL translation",
+          "default": false
+        },
         "api_key": {
           "description": "DeepL API Key",
           "type": "string"
         }
+      },
+      "dependentRequired": {
+        "enabled": ["api_key"]
       }
     },
     "source_replace": {

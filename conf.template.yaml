@@ -1,42 +1,34 @@
-OpenAI:
-  API_KEY:
-  model:
-    main: gpt-3.5-turbo-16k
+#$schema: https://raw.githubusercontent.com/educorvi/cms-chatbot/main/conf.schema.json
+$schema: ./conf.schema.json
+open_ai:
+  api_key: ""
+  model: gpt-3.5-turbo-16k
+  spending_limit: 50
 
+search:
+  typesense:
+    host:
+    port:
+    protocol:
+    collection:
+    result_number: 4
+    result_size: 300
+    api_key:
+  elasticsearch:
+    url:
+    index:
+    result_number: 0
+    result_size: 0
+  engine: typesense
 
-# Searchengine: elasticsearch or typesense
-SearchEngine: elasticsearch
-
-ElasticSearch:
-  url:
-  index:
-  # Number of results returned per query
-  result_number: 4
-  # Number of characters per result
-  result_size: 300
-
-Typesense:
-  host:
-  port:
-  protocol:
-  collection:
-  # Number of results returned per query
-  result_number: 4
-  # Number of tokens before and after highlight
-  result_size: 150
-  api_key:
-
-Websocket:
+websocket:
   port: 8765
 
-DeepL:
-  API_KEY:
+deepl:
+  enabled: true
 
 # Replaces parts of the source url that is returned to the client
 source_replace:
   # Supports regex
   from: ""
   to: ""
-
-# monthly_limit in dollars. The actual price might slightly overshoot the limit, because it is only checked after every query
-monthly_limit: 50
