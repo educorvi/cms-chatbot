@@ -24,6 +24,9 @@ search:
 websocket:
   port: 8765
 
+database:
+  path: /var/lib/cms-chatbot/database.db
+
 deepl:
   enabled: true
 

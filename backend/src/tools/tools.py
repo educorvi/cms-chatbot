@@ -1,13 +1,12 @@
 import json
 from typing import Callable
-
 from langchain.tools import Tool
-
 import typesense
-
-from customTypesenseRetriever import CustomTypesenseRetriever
-from customElasticSearchRetriever import CustomElasticSearchRetriever
 import elasticsearch
+
+from backend.src.tools.customTypesenseRetriever import CustomTypesenseRetriever
+from backend.src.tools.customElasticSearchRetriever import CustomElasticSearchRetriever
+
 
 
 def search_documents(get_documents_func: Callable[[str], list[any]], sources: list) -> Callable[[str], str]:

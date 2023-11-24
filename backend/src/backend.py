@@ -1,33 +1,49 @@
+import asyncio
 import json
-import os
-
-import argparse
+import re
+import deepl
 import websockets
-from jsonschema import validate
-import yaml
 
+from langchain.memory import ConversationBufferMemory
+from langchain.agents import initialize_agent, AgentType
+from langchain.chat_models import ChatOpenAI
+from langchain.callbacks import get_openai_callback
 
+from backend.src.CallbackHandler import StreamingWebsocketHandler, WebsocketCallbackHandler
+from backend.src.DB_Classes import get_cost_of_current_month, Chat
+from backend.src.tools.config import get_config
+from backend.src.tools.tools import create_typesense_tool, create_elastic_tool
+from backend.src.tools.translation import translate_if_source_lang
 
 
 
 def start_backend():
-    # Command line arguments
-    parser = argparse.ArgumentParser(prog='cms-chatbot', description='Backend for the cms chatbot')
-    parser.add_argument('-c', '--config', help='path to the config file', default="/etc/cms-chatbot/conf.yaml")
-    args = parser.parse_args()
+    conf = get_config()
 
-    # Validate config file
-    schema = json.load(open(os.getcwd()+"/conf.schema.json", "r"))
-    conf = yaml.safe_load(open(args.config, "r"))
-    validate(instance=conf, schema=schema)
+    translator = None
+    if conf["deepl"]["enabled"] is True:
+        translator = deepl.Translator(conf["deepl"]["api_key"])
+
+    limit = 50
+    if "spending_limit" in conf["open_ai"]:
+        limit = conf["open_ai"]["spending_limit"]
+
+    sr_from = conf["source_replace"]["from"]
+    sr_to = conf["source_replace"]["to"]
+    sr_exp = re.compile(sr_from)
+
+    port = conf["websocket"]["port"]
+    host = "localhost"
+    if "host" in conf["websocket"]:
+        host = conf["websocket"]["host"]
 
     async def respond(websocket):
         sources = []
+
         if conf["search"]["engine"] == "elasticsearch":
-            tool = create_elastic_tool(es_url, es_index, es_result_size, es_result_number, sources)
+            tool = create_elastic_tool(conf["search"]["elasticsearch"], sources)
         elif conf["search"]["engine"] == "typesense":
-            tool = create_typesense_tool(ts_host, ts_port, ts_protocol, ts_api_key, ts_collection,
-                                         ts_result_size, ts_result_number, sources)
+            tool = create_typesense_tool(conf["search"]["typesense"], sources)
         else:
             raise Exception("Search engine not supported")
 
@@ -43,8 +59,8 @@ def start_backend():
         agent = initialize_agent(
             tools,
             ChatOpenAI(
-                temperature=0, openai_api_key=open_ai_key,
-                model_name=open_ai_model,
+                temperature=0, openai_api_key=conf["open_ai"]["api_key"],
+                model_name=conf["open_ai"]["model"],
                 # streaming=True,
                 callbacks=[StreamingWebsocketHandler(websocket)]
             ),
@@ -61,6 +77,8 @@ def start_backend():
                         trans = translator.translate_text(message, target_lang="DE")
                         message = trans.text
                         source_lang = trans.detected_source_lang
+                        if source_lang == "EN":
+                            source_lang = "EN-US"
 
                     if get_cost_of_current_month() >= limit:
                         await websocket.send(
@@ -106,7 +124,7 @@ def start_backend():
             print("Connection closed")
 
     async def run_websocket(port_number):
-        async with websockets.serve(respond, "0.0.0.0", port_number):
+        async with websockets.serve(respond, host, port_number):
             print(f"Started websocket server on port", port_number)
             await asyncio.Future()
 

@@ -8,7 +8,10 @@
   "required": [
     "open_ai",
     "search",
-    "websocket"
+    "websocket",
+    "database",
+    "deepl",
+    "source_replace"
   ],
   "properties": {
     "$schema": {
@@ -181,6 +184,20 @@
           "type": "string",
           "description": "Hostname of the websocket server",
           "default": "localhost"
+        }
+      }
+    },
+    "database": {
+      "type": "object",
+      "title": "Database Settings",
+      "description": "Settings for the database",
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path to the database file"
         }
       }
     },
