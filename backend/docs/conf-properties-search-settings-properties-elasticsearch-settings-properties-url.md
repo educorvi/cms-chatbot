@@ -1,3 +1,0 @@
-## url Type
-
-`string`

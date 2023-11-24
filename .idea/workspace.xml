@@ -4,76 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbd7c569-f3d1-45f0-8ed1-8be54268fa44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/CallbackHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/DB_Classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/tools/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/tools/translation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsonSchemas.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-chatbot" beforeDir="false" afterPath="$PROJECT_DIR$/backend/cms-chatbot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/conf.schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/conf.template.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customElasticSearchRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/tools/customElasticSearchRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customTypesenseRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/tools/customTypesenseRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-deepl-settings-dependentrequired.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-dependentrequired.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-deepl-settings-properties-api_key.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-properties-api_key.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-deepl-settings-properties-enabled.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-properties-enabled.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-deepl-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-openai-settings-properties-api_key.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-api_key.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-openai-settings-properties-model.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-model.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-openai-settings-properties-spend_limit.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-spend_limit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-openai-settings-properties-spending_limit.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-spending_limit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-openai-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-schema.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-schema.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-0-properties-engine.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0-properties-engine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-0-properties.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0-properties.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-0.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-1-properties-engine.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1-properties-engine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-1-properties.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1-properties.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties-engine.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties-engine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties-engine.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties-engine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-index.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_number.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_number.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_size.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_size.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-url.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-url.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-elasticsearch-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-engine.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-engine.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-api_key.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-api_key.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-collection.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-collection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-host.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-host.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-port.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-port.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-protocol.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-protocol.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_number.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_number.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_size.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_size.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings-properties-typesense-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-search-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-source-url-replacement-properties-from.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement-properties-from.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-source-url-replacement-properties-to.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement-properties-to.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-source-url-replacement.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-websocket-settings-properties-host.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings-properties-host.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-websocket-settings-properties-port.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings-properties-port.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf-properties-websocket-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docs/conf.schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/tools/tools.py" afterDir="false" />
+    <list default="true" id="cbd7c569-f3d1-45f0-8ed1-8be54268fa44" name="Changes" comment="backend implemented">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-dependentrequired.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-properties-api_key.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings-properties-enabled.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-deepl-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-api_key.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-spend_limit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings-properties-spending_limit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-openai-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-schema.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0-properties-engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0-properties.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-0.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1-properties-engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1-properties.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties-engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch-properties.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-elasticsearch.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties-engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense-properties.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-anyof-search-configuration-with-typesense.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_number.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-result_size.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings-properties-url.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-elasticsearch-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-api_key.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-collection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-host.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-port.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-protocol.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_number.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings-properties-result_size.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings-properties-typesense-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-search-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement-properties-from.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement-properties-to.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-source-url-replacement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings-properties-host.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings-properties-port.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf-properties-websocket-settings.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docs/conf.schema.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +85,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/julian/projects/arbeit/inwi-gpt-chatbot/backend/src/tools",
@@ -121,6 +102,7 @@
       <recent name="$PROJECT_DIR$/backend/src/tools" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend" />
     </key>
   </component>
@@ -181,14 +163,27 @@
       <option name="presentableId" value="Default" />
       <updated>1700819721086</updated>
       <workItem from="1700819722144" duration="592000" />
-      <workItem from="1700820320109" duration="1095000" />
+      <workItem from="1700820320109" duration="2303000" />
     </task>
+    <task id="LOCAL-00001" summary="backend implemented">
+      <option name="closed" value="true" />
+      <created>1700821587019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700821587019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="backend implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend implemented" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/inwi_gpt_chatbot$cms_chatbot.coverage" NAME="cms-chatbot Coverage Results" MODIFIED="1700821381619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/inwi_gpt_chatbot$cms_chatbot.coverage" NAME="cms-chatbot Coverage Results" MODIFIED="1700821453506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
