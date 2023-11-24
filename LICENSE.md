@@ -3,7 +3,7 @@ License text copyright © 2023 MariaDB plc, All Rights Reserved. “Business Sou
 
 ## Parameters
 
-|                |                                                         |
+| Parameter      | Value                                                   |
 |----------------|---------------------------------------------------------|
 | Licensor       | Educorvi GmbH & Co. KG                                  |
 | Licensed Work  | CMS Chatbot v1.0.0                                      |
