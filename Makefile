@@ -15,4 +15,5 @@ docs: docs/backend/conf.md
 install:
 	@echo -e "${GREEN}Installing Backend:${NC}"
 	@cd backend && $(MAKE) install
-	@echo -e "${GREEN}Building Backend:${NC}"
+	@echo -e "${GREEN}Building Frontend:${NC}"
+	@cd frontend && yarn run build-webcomponent
