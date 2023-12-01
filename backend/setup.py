@@ -16,8 +16,8 @@ setup(
     author_email='julian.pollinger@educorvi.de',
     description='Backend for the CMS Chatbot',
     install_requires=requirements,
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
+    packages=find_packages(),
+    package_dir={'': '.'},
     data_files=[
         ("/etc/cms-chatbot", ["conf.template.yaml"]),
         ("/lib/systemd/system", ["cms-chatbot.service"]),
@@ -25,7 +25,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'cms-chatbot = backend:start_backend',
+            'cms-chatbot = src.backend:start_backend',
         ],
     },
     package_data={p: ["*"] for p in find_packages()},

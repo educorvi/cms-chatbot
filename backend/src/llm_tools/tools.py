@@ -4,8 +4,8 @@ from langchain.tools import Tool
 import typesense
 import elasticsearch
 
-from backend.src.tools.customTypesenseRetriever import CustomTypesenseRetriever
-from backend.src.tools.customElasticSearchRetriever import CustomElasticSearchRetriever
+from src.llm_tools.customTypesenseRetriever import CustomTypesenseRetriever
+from src.llm_tools.customElasticSearchRetriever import CustomElasticSearchRetriever
 
 
 

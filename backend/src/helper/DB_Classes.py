@@ -2,7 +2,7 @@ import datetime
 
 from peewee import *
 
-from backend.src.tools.config import get_config
+from src.helper.config import get_config
 
 db = SqliteDatabase(get_config()["database"]["path"])
 

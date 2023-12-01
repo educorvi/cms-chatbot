@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd7c569-f3d1-45f0-8ed1-8be54268fa44" name="Changes" comment="License formatting">
-      <change afterPath="$PROJECT_DIR$/backend/cms-chatbot.service" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/helper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/llm_tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/customElasticSearchRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/customElasticSearchRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/customTypesenseRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/customTypesenseRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/translation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/cms-chatbot" beforeDir="false" afterPath="$PROJECT_DIR$/backend/cms-chatbot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/CallbackHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/CallbackHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/DB_Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/DB_Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/customElasticSearchRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/customElasticSearchRetriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/customTypesenseRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/customTypesenseRetriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/translation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +31,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Setup Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -47,32 +58,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/julian/projects/arbeit/inwi-gpt-chatbot/backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "setup.py",
+    "last_opened_file_path": "/home/julian/projects/arbeit/inwi-gpt-chatbot/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/backend/src/tools" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backend/src/helper" />
+      <recent name="$PROJECT_DIR$/backend/src/llm_tools" />
       <recent name="$PROJECT_DIR$/backend/src" />
       <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,6 +145,7 @@
       <updated>1700819721086</updated>
       <workItem from="1700819722144" duration="592000" />
       <workItem from="1700820320109" duration="10164000" />
+      <workItem from="1701424408291" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="backend implemented">
       <option name="closed" value="true" />
@@ -178,6 +192,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="backend implemented" />
