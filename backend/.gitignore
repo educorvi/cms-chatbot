@@ -2,3 +2,6 @@ out
 conf.yaml
 venv
 *.db
+dist
+files.txt
+*.egg-info

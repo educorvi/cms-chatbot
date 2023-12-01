@@ -1,0 +1,12 @@
+[Unit]
+Description=CMS Chatbot Backend Service
+
+[Service]
+type=simple
+ExecStart=/usr/bin/env cms-chatbot
+ProtectHome=true
+ProtectSystem=strict
+StateDirectory=cms-chatbot
+
+[Install]
+WantedBy=multi-user.target
