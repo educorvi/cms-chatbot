@@ -18,11 +18,11 @@ setup(
     install_requires=requirements,
     packages=find_packages(),
     package_dir={'': '.'},
-    data_files=[
-        ("/etc/cms-chatbot", ["conf.template.yaml"]),
-        ("/lib/systemd/system", ["cms-chatbot.service"]),
-        ('/var/lib/cms-chatbot', []),
-    ],
+    # data_files=[
+    #     ("/etc/cms-chatbot", ["conf.template.yaml"]),
+    #     ("/lib/systemd/system", ["cms-chatbot.service"]),
+    #     ('/var/lib/cms-chatbot', []),
+    # ],
     entry_points={
         'console_scripts': [
             'cms-chatbot = src.backend:start_backend',
