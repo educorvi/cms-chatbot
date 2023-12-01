@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd7c569-f3d1-45f0-8ed1-8be54268fa44" name="Changes" comment="License formatting">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/helper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/llm_tools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inwi-gpt-chatbot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/cms-chatbot" beforeDir="false" afterPath="$PROJECT_DIR$/backend/cms-chatbot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/CallbackHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/CallbackHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/DB_Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/DB_Classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/customElasticSearchRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/customElasticSearchRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/customTypesenseRetriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/customTypesenseRetriever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/llm_tools/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/helper/translation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "setup.py",
-    "last_opened_file_path": "/home/julian/projects/arbeit/inwi-gpt-chatbot/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/julian/projects/arbeit/inwi-gpt-chatbot/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/julian/.local/share/JetBrains/Toolbox/apps/pycharm-professional/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />

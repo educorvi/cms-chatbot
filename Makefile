@@ -15,3 +15,4 @@ docs: docs/backend/conf.md
 install:
 	@echo -e "${GREEN}Installing Backend:${NC}"
 	@cd backend && $(MAKE) install
+	@echo -e "${GREEN}Building Backend:${NC}"
