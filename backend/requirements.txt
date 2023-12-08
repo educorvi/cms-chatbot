@@ -1,13 +1,13 @@
 jsonschema==4.19.2
 argparse==1.4.0
 pyyaml==6.0.1
-langchain==0.0.335
+langchain==0.0.348
 typesense==0.17.0
 elasticsearch==8.11.0
 websockets==12.0
 peewee==3.17.0
 deepl==1.16.1
-openai==1.3.5
+openai==1.3.7
 
 pip==23.2.1
 attrs==23.1.0
