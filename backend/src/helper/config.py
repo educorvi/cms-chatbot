@@ -8,6 +8,12 @@ import yaml
 
 
 def get_args():
+    """
+    Parse the command line arguments.
+
+    Returns:
+        argparse.Namespace: The parsed arguments.
+    """
     parser = argparse.ArgumentParser(prog='cms-chatbot', description='Backend for the cms chatbot')
     parser.add_argument('-c', '--config', help='path to the config file', default="/etc/cms-chatbot/conf.yaml")
     args = parser.parse_args()
@@ -15,6 +21,12 @@ def get_args():
 
 
 def get_config():
+    """
+    Get the config from the config file.
+
+    Returns:
+        dict: The config.
+    """
     args = get_args()
     conf_location = args.config
     if os.getenv("CMS_CHATBOT_CONFIG") is not None:

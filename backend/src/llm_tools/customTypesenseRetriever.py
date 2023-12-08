@@ -7,21 +7,46 @@ from langchain.docstore.document import Document
 
 
 class CustomTypesenseRetriever:
-    """Wrapper around Typesense
+    """
+    Wrapper around Typesense
+
+    Attributes:
+        client (Any): The Typesense client.
+        collection (str): The name of the collection to use.
+        size (int): The size of the text snippets per document.
+        number (int): The number of documents to return.
     """
 
-    size: int
-    number: int
     collection: str
     client: Any
+    size: int
+    number: int
 
     def __init__(self, client: Any, collection: str, size=300, number=2):
+        """
+        Initialize the retriever.
+
+        Args:
+            client (Any): The Typesense client.
+            collection (str): The name of the collection to use.
+            size (int, optional): The size of the text snippets per document. Defaults to 300.
+            number (int, optional): The number of documents to return. Defaults to 2.
+        """
         self.client = client
         self.collection = collection
         self.size = size
         self.number = number
 
     def get_relevant_documents(self, query: str) -> List[Document]:
+        """
+        Get the relevant documents for a query.
+
+        Args:
+            query (str): The query to use.
+
+        Returns:
+            List[Document]: The relevant documents.
+        """
         docs = []
 
         res = self.client.collections[self.collection].documents.search({

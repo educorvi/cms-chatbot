@@ -10,7 +10,27 @@ from src.llm_tools.customElasticSearchRetriever import CustomElasticSearchRetrie
 
 
 def search_documents(get_documents_func: Callable[[str], list[any]], sources: list) -> Callable[[str], str]:
+    """
+    Create a function that searches documents and returns the results formatted as a string that can be used as
+    context for the LLM.
+
+    Args:
+        get_documents_func (Callable[[str], list[any]]): The function to use to get the documents.
+        sources (list): The list to append the sources to.
+
+    Returns:
+        Callable[[str], str]: The function described above.
+    """
     def func(query: str) -> str:
+        """
+        Search documents and return the results formatted as a string that can be used as context for the LLM.
+
+        Args:
+            query (str): The query to use to search the tool.
+
+        Returns:
+            str: The results formatted as a string.
+        """
         results = get_documents_func(query)
         sources.extend(
             list(
@@ -36,6 +56,16 @@ def search_documents(get_documents_func: Callable[[str], list[any]], sources: li
 
 
 def create_elastic_tool(es_config, sources: list):
+    """
+    Create an ElasticSearch tool.
+
+    Args:
+        es_config (dict): The configuration for the ElasticSearch tool.
+        sources (list): The list to append the sources to.
+
+    Returns:
+        Tool: The tool.
+    """
     retriever = CustomElasticSearchRetriever(
         elasticsearch.Elasticsearch(es_config["url"]),
         es_config["index"],
@@ -54,6 +84,16 @@ def create_elastic_tool(es_config, sources: list):
 
 
 def create_typesense_tool(ts_conf, sources: list):
+    """
+    Create a Typesense tool.
+
+    Args:
+        ts_conf (dict): The configuration for the Typesense tool.
+        sources (list): The list to append the sources to.
+
+    Returns:
+        Tool: The tool.
+    """
     client = typesense.Client({
         'api_key': ts_conf["api_key"],
         'nodes': [

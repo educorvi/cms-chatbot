@@ -5,24 +5,11 @@ from typing import Dict, Any, List, Union
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.schema import BaseMessage, LLMResult, AgentAction, AgentFinish
 
-"""
-Extension of WebsocketCallbackHandler with support for Streaming. 
-Not really useful for agents, as every output is streamed, so also internal messages.
-"""
-class StreamingWebsocketHandler(BaseCallbackHandler):
-    websocket: Any
-
-    def __init__(self, websocket):
-        self.websocket = websocket
-        super().__init__()
-
-    def on_llm_new_token(self, token: str, **kwargs: Any) -> Any:
-        """Run on new LLM token. Only available when streaming is enabled."""
-        # s = asyncio.to_thread(self.websocket.send, json.dumps({"type": "message_stream", "content": token}))
-        _ = asyncio.create_task(self.websocket.send(json.dumps({"type": "message_stream", "content": token})))
-
 
 class WebsocketCallbackHandler(BaseCallbackHandler):
+    """
+    Callback handler for websockets.
+    """
     websocket: Any
 
     def __init__(self, websocket):

@@ -1,4 +1,15 @@
-def translate_if_source_lang(translator, message, source_lang) -> str:
-    if source_lang is None or translator is None:
+def translate_if_target_lang(translator, message, target_lang) -> str:
+    """
+    Translate a message if a target language is specified.
+
+    Args:
+        translator: The translator to use.
+        message: The message to translate.
+        target_lang: The target language to translate to.
+
+    Returns:
+        str: The translated message.
+    """
+    if target_lang is None or translator is None:
         return message
-    return translator.translate_text(message, target_lang=source_lang).text
+    return translator.translate_text(message, target_lang=target_lang).text
